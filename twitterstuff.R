@@ -8,8 +8,8 @@ access_token <- "932364140198236160-FB48mRRqMtLm7tweh9Qm12rzT75x4Vi"
 access_token_secret <- "HFnmCJfOnizAgT0vDPunH5u8Bk0WHc4DPsGHk7mIIUM9T"
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 
-good_text <- scan("C:/Users/mitch/Documents/School/399/twittershiny/poswords.txt", what='character', comment.char=';')
-bad_text <- scan("C:/Users/mitch/Documents/School/399/twittershiny/negwords.txt", what='character', comment.char=';')
+good_text <- scan("poswords.txt", what='character', comment.char=';')
+bad_text <- scan("negwords.txt", what='character', comment.char=';')
 
 score.sentiment <- function(sentences, good_text, bad_text, .progress='none')
 {
